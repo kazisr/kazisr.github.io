@@ -10,30 +10,30 @@ jQuery(document).ready(function(){
 	
 	// here all ready functions
 	
-	elisc_tm_modalbox();
-	elisc_tm_movingbox();
-	elisc_tm_page_transition();
-	elisc_tm_trigger_menu();
-	elisc_tm_service_popup();
-	elisc_tm_experience_popup();
-	elisc_tm_modalbox_news();
-	elisc_tm_modalbox_portfolio();
-	elisc_tm_cursor();
-	elisc_tm_imgtosvg();
-	elisc_tm_popup();
-	elisc_tm_data_images();
-	elisc_tm_contact_form();
-	elisc_tm_owl_carousel();
-	elisc_tm_scrollable();
-	elisc_tm_stickyy();
-	elisc_tm_down();
-	elisc_tm_location();
+	kazi_tm_modalbox();
+	kazi_tm_movingbox();
+	kazi_tm_page_transition();
+	kazi_tm_trigger_menu();
+	kazi_tm_service_popup();
+	kazi_tm_experience_popup();
+	kazi_tm_modalbox_news();
+	kazi_tm_modalbox_portfolio();
+	kazi_tm_cursor();
+	kazi_tm_imgtosvg();
+	kazi_tm_popup();
+	kazi_tm_data_images();
+	kazi_tm_contact_form();
+	kazi_tm_owl_carousel();
+	kazi_tm_scrollable();
+	kazi_tm_stickyy();
+	kazi_tm_down();
+	kazi_tm_location();
 	
 	jQuery(window).load('body', function(){
-		elisc_tm_my_load();
+		kazi_tm_my_load();
 	});
 	jQuery(window).on('resize', function(){
-		elisc_tm_menu_closer();
+		kazi_tm_menu_closer();
 	});
 	
 });
@@ -46,19 +46,19 @@ jQuery(document).ready(function(){
 // --------------------   MODALBOX    ------------------
 // -----------------------------------------------------
 
-function elisc_tm_modalbox(){
+function kazi_tm_modalbox(){
 	"use strict";
 	
-	jQuery('.elisc_tm_all_wrap').prepend('<div class="elisc_tm_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>');
+	jQuery('.kazi_tm_all_wrap').prepend('<div class="kazi_tm_modalbox"><div class="box_inner"><div class="close"><a href="#"><i class="icon-cancel"></i></a></div><div class="description_wrap"></div></div></div>');
 }
 
 // -----------------------------------------------------
 // ---------------------   MOVINGBOX    ----------------
 // -----------------------------------------------------
 
-function elisc_tm_movingbox(){
+function kazi_tm_movingbox(){
 	"use strict";
-	var news		= jQuery('.elisc_tm_news');
+	var news		= jQuery('.kazi_tm_news');
 	if(news.length){
 		if(!$('.movingbox').length){
 			$('body').append('<div class="movingbox"></div>');
@@ -66,7 +66,7 @@ function elisc_tm_movingbox(){
 	}
 	var movingbox 	= jQuery('.movingbox');
 	var movingboxH 	= jQuery('.movingbox').height()/2;
-	var list	  	= jQuery('.elisc_tm_news .list ul li');
+	var list	  	= jQuery('.kazi_tm_news .list ul li');
 	list.on('mouseenter',function(){
 		var element = jQuery(this);
 		var image	= element.find('.popup_image').attr('src');
@@ -86,21 +86,21 @@ function elisc_tm_movingbox(){
 // ---------------   PAGE TRANSITION    ----------------
 // -----------------------------------------------------
 
-function elisc_tm_page_transition(){
+function kazi_tm_page_transition(){
 	
 	"use strict";
 	
-	var section 		= jQuery('.elisc_tm_section');
+	var section 		= jQuery('.kazi_tm_section');
 	var allLi 			= jQuery('.transition_link li');
 	var button			= jQuery('.transition_link a');
-	var wrapper 		= jQuery('.elisc_tm_all_wrap');
+	var wrapper 		= jQuery('.kazi_tm_all_wrap');
 	var enter	 		= wrapper.data('enter');
 	var exit		 	= wrapper.data('exit');
 	
 	button.on('click',function(){
 		var element 	= jQuery(this);
 		var href		= element.attr('href');
-		if(element.parent().hasClass('elisc_tm_button')){
+		if(element.parent().hasClass('kazi_tm_button')){
 			jQuery('.menu .transition_link a[href="'+href+'"]').trigger('click');
 			hashtag();
 			return false;
@@ -127,13 +127,13 @@ function elisc_tm_page_transition(){
 // ---------------   TRIGGER MENU    -------------------
 // -----------------------------------------------------
 
-function elisc_tm_trigger_menu(){
+function kazi_tm_trigger_menu(){
 	
 	"use strict";
 	
-	var hamburger 		= jQuery('.elisc_tm_topbar .trigger .hamburger');
-	var mobileMenu		= jQuery('.elisc_tm_mobile_menu');
-	var mobileMenuList	= jQuery('.elisc_tm_mobile_menu .menu_list ul li a');
+	var hamburger 		= jQuery('.kazi_tm_topbar .trigger .hamburger');
+	var mobileMenu		= jQuery('.kazi_tm_mobile_menu');
+	var mobileMenuList	= jQuery('.kazi_tm_mobile_menu .menu_list ul li a');
 
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
@@ -149,21 +149,21 @@ function elisc_tm_trigger_menu(){
 	});
 	
 	mobileMenuList.on('click',function(){
-		jQuery('.elisc_tm_topbar .trigger .hamburger').removeClass('is-active');
+		jQuery('.kazi_tm_topbar .trigger .hamburger').removeClass('is-active');
 		mobileMenu.removeClass('opened');
 		return false;
 	});
 	
 }
 
-function elisc_tm_menu_closer(){
+function kazi_tm_menu_closer(){
 	
 	"use strict";
 	
 	var ww = jQuery(window).width();
 	if(ww >= 1040){
-		jQuery('.elisc_tm_mobile_menu').removeClass('opened');
-		jQuery('.elisc_tm_topbar .trigger .hamburger').removeClass('is-active');
+		jQuery('.kazi_tm_mobile_menu').removeClass('opened');
+		jQuery('.kazi_tm_topbar .trigger .hamburger').removeClass('is-active');
 	}
 }
 
@@ -171,17 +171,17 @@ function elisc_tm_menu_closer(){
 // -------------  EXPERIENCE POPUP  ----------------
 // -------------------------------------------------
 
-function elisc_tm_experience_popup(){
+function kazi_tm_experience_popup(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.elisc_tm_modalbox');
-	var button			= jQuery('.elisc_tm_experience .elisc_tm_full_link');
+	var modalBox		= jQuery('.kazi_tm_modalbox');
+	var button			= jQuery('.kazi_tm_experience .kazi_tm_full_link');
 	var closePopup		= modalBox.find('.close');
 	
 	button.on('click',function(){
 		var element = jQuery(this);
-		var parent	= element.closest('.elisc_tm_experience .list ul li');
+		var parent	= element.closest('.kazi_tm_experience .list ul li');
 		var elImage	= parent.find('.popup_image').attr('src');
 		var year	= parent.find('.job span').text().slice(1);
 		var job		= parent.find('.job h3').text();
@@ -190,7 +190,7 @@ function elisc_tm_experience_popup(){
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.descriptions').prepend('<div class="top_image"><img src="assets/img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+elImage+'"></div></div>');
-		elisc_tm_data_images();
+		kazi_tm_data_images();
 		modalBox.find('.descriptions .top_image').after('<div class="infos"><div class="year"><span>'+year+'</span></div><div class="job"><span>'+place+'</span><h3>'+job+'</h3></div></div>');
 		return false;
 	});
@@ -205,24 +205,24 @@ function elisc_tm_experience_popup(){
 // -------------  SERVICE POPUP  -------------------
 // -------------------------------------------------
 
-function elisc_tm_service_popup(){
+function kazi_tm_service_popup(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.elisc_tm_modalbox');
-	var button			= jQuery('.elisc_tm_services .service_list .elisc_tm_full_link');
+	var modalBox		= jQuery('.kazi_tm_modalbox');
+	var button			= jQuery('.kazi_tm_services .service_list .kazi_tm_full_link');
 	var closePopup		= modalBox.find('.close');
 	
 	button.on('click',function(){
 		var element = jQuery(this);
-		var parent	= element.closest('.elisc_tm_services .service_list ul li');
+		var parent	= element.closest('.kazi_tm_services .service_list ul li');
 		var elImage	= parent.find('.popup_image').attr('src');
 		var title	= parent.find('.title h3').text();
 		var content = parent.find('.hidden_details').html();
 		modalBox.addClass('opened');
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.descriptions').prepend('<div class="top_image"><img src="assets/img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+elImage+'"></div></div>');
-		elisc_tm_data_images();
+		kazi_tm_data_images();
 		modalBox.find('.descriptions .top_image').after('<div class="main_title"><h3>'+title+'</h3></div>');
 		return false;
 	});
@@ -237,12 +237,12 @@ function elisc_tm_service_popup(){
 // -------------  MODALBOX NEWS  -------------------
 // -------------------------------------------------
 
-function elisc_tm_modalbox_news(){
+function kazi_tm_modalbox_news(){
 	
 	"use strict";
 	
-	var modalBox		= jQuery('.elisc_tm_modalbox');
-	var button			= jQuery('.elisc_tm_news .list .title a,.elisc_tm_news .elisc_tm_read_more a');
+	var modalBox		= jQuery('.kazi_tm_modalbox');
+	var button			= jQuery('.kazi_tm_news .list .title a,.kazi_tm_news .kazi_tm_read_more a');
 	var closePopup		= modalBox.find('.close');
 	
 	button.on('click',function(){
@@ -256,7 +256,7 @@ function elisc_tm_modalbox_news(){
 		modalBox.find('.description_wrap').html(content);
 		modalBox.find('.news_popup_informations').prepend('<div class="image"><img src="assets/img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.news_popup_informations .image').after('<div class="details"><div class="meta">'+meta+'</div><div class="title"><h3>'+title+'</h3></div></div>');
-		elisc_tm_data_images();
+		kazi_tm_data_images();
 		return false;
 	});
 	closePopup.on('click',function(){
@@ -270,12 +270,12 @@ function elisc_tm_modalbox_news(){
 // -------------  MODALBOX PORTFOLIO  --------------
 // -------------------------------------------------
 
-function elisc_tm_modalbox_portfolio(){
+function kazi_tm_modalbox_portfolio(){
 	
 	"use strict";
 	
-	var modalBox	= jQuery('.elisc_tm_modalbox');
-	var button		= jQuery('.elisc_tm_portfolio .portfolio_popup');
+	var modalBox	= jQuery('.kazi_tm_modalbox');
+	var button		= jQuery('.kazi_tm_portfolio .portfolio_popup');
 	
 	button.on('click',function(){
 		var element 	= jQuery(this);
@@ -289,7 +289,7 @@ function elisc_tm_modalbox_portfolio(){
 		modalBox.find('.description_wrap').html(details);
 		modalBox.find('.popup_details').prepend('<div class="top_image"><img src="assets/img/thumbs/4-2.jpg" alt="" /><div class="main" data-img-url="'+image+'"></div></div>');
 		modalBox.find('.popup_details .top_image').after('<div class="portfolio_main_title"><span class="category">'+category+'</span><h3 class="title">'+title+'</h3></div>');	
-		elisc_tm_data_images();
+		kazi_tm_data_images();
 		return false;
 	});
 }
@@ -298,7 +298,7 @@ function elisc_tm_modalbox_portfolio(){
 // ---------------   PRELOADER   -----------------------
 // -----------------------------------------------------
 
-function elisc_tm_preloader(){
+function kazi_tm_preloader(){
 	
 	"use strict";
 	
@@ -322,19 +322,19 @@ function elisc_tm_preloader(){
 // -----------------   MY LOAD    ----------------------
 // -----------------------------------------------------
 
-function elisc_tm_my_load(){
+function kazi_tm_my_load(){
 	
 	"use strict";
 	
 	var speed	= 500;
-	setTimeout(function(){elisc_tm_preloader();},speed);
+	setTimeout(function(){kazi_tm_preloader();},speed);
 }
 
 // -----------------------------------------------------
 // ------------------   CURSOR    ----------------------
 // -----------------------------------------------------
 
-function elisc_tm_cursor(){
+function kazi_tm_cursor(){
     "use strict";
 	
 	var myCursor	= jQuery('.mouse-cursor');
@@ -360,7 +360,7 @@ function elisc_tm_cursor(){
 // ---------------    IMAGE TO SVG    ------------------
 // -----------------------------------------------------
 
-function elisc_tm_imgtosvg(){
+function kazi_tm_imgtosvg(){
 	
 	"use strict";
 	
@@ -394,7 +394,7 @@ function elisc_tm_imgtosvg(){
 // --------------------   POPUP    ---------------------
 // -----------------------------------------------------
 
-function elisc_tm_popup(){
+function kazi_tm_popup(){
 	
 	"use strict";
 
@@ -433,7 +433,7 @@ function elisc_tm_popup(){
 // ---------------   DATA IMAGES    --------------------
 // -----------------------------------------------------
 
-function elisc_tm_data_images(){
+function kazi_tm_data_images(){
 	
 	"use strict";
 	
@@ -450,7 +450,7 @@ function elisc_tm_data_images(){
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
-function elisc_tm_contact_form(){
+function kazi_tm_contact_form(){
 	
 	"use strict";
 	
@@ -496,11 +496,11 @@ function elisc_tm_contact_form(){
 // ----------------    OWL CAROUSEL    -----------------
 // -----------------------------------------------------
 
-function elisc_tm_owl_carousel(){
+function kazi_tm_owl_carousel(){
 
 	"use strict";
 	
-	var carousel			= jQuery('.elisc_tm_testimonials .owl-carousel');
+	var carousel			= jQuery('.kazi_tm_testimonials .owl-carousel');
 
 	carousel.owlCarousel({
 		loop: true,
@@ -515,7 +515,7 @@ function elisc_tm_owl_carousel(){
 		navSpeed: false
 	});
 	
-	var carousel2			= jQuery('.elisc_tm_partners .owl-carousel');
+	var carousel2			= jQuery('.kazi_tm_partners .owl-carousel');
 
 	carousel2.owlCarousel({
 		loop: true,
@@ -537,9 +537,9 @@ function elisc_tm_owl_carousel(){
 			1920:{items:4}
 		}
 	});
-	elisc_tm_imgtosvg();
+	kazi_tm_imgtosvg();
 	
-	var carousel3			= jQuery('.elisc_tm_portfolio .owl-carousel');
+	var carousel3			= jQuery('.kazi_tm_portfolio .owl-carousel');
 	
 	var rtlMode	= false;
 
@@ -574,12 +574,12 @@ function elisc_tm_owl_carousel(){
 			}
 		});
 
-		element.closest('.elisc_tm_portfolio').find('.next_button').click(function() {
+		element.closest('.kazi_tm_portfolio').find('.next_button').click(function() {
 			element.trigger('next.owl.carousel');
 			return false;
 		});
 		// Go to the previous item
-		element.closest('.elisc_tm_portfolio').find('.prev_button').click(function() {
+		element.closest('.kazi_tm_portfolio').find('.prev_button').click(function() {
 			// With optional speed parameter
 			// Parameters has to be in square bracket '[]'
 			element.trigger('prev.owl.carousel');
@@ -593,7 +593,7 @@ function elisc_tm_owl_carousel(){
 // --------------   MENU SCROLL  -------------------
 // -------------------------------------------------
 
-function elisc_tm_scrollable(){
+function kazi_tm_scrollable(){
 	
 	"use strict";
 	
@@ -603,10 +603,10 @@ function elisc_tm_scrollable(){
 	if(w <= 1600){
 		spacing = 30;
 	}
-	var avatarHeight	= jQuery('.elisc_tm_sidebar .author').outerHeight();
-	var scrollable		= jQuery('.elisc_tm_sidebar .menu.scrollable');
-	var verMenu			= jQuery('.elisc_tm_sidebar .menu');
-	var copyright		= jQuery('.elisc_tm_sidebar .copyright').outerHeight()+spacing;
+	var avatarHeight	= jQuery('.kazi_tm_sidebar .author').outerHeight();
+	var scrollable		= jQuery('.kazi_tm_sidebar .menu.scrollable');
+	var verMenu			= jQuery('.kazi_tm_sidebar .menu');
+	var copyright		= jQuery('.kazi_tm_sidebar .copyright').outerHeight()+spacing;
 	
 	verMenu.css({height:H-avatarHeight-copyright});
 	scrollable.each(function(){
@@ -625,7 +625,7 @@ function elisc_tm_scrollable(){
 // --------------------- STICKY   ----------------------
 // -----------------------------------------------------
 
-function elisc_tm_stickyy(){
+function kazi_tm_stickyy(){
 	 
 	"use strict";
 
@@ -656,7 +656,7 @@ jQuery('.anchor_nav').onePageNav();
 // -----------------    DOWN    ------------------------
 // -----------------------------------------------------
 
-function elisc_tm_down(){
+function kazi_tm_down(){
 	
 	"use strict";
 		
@@ -676,7 +676,7 @@ function elisc_tm_down(){
 // ----------------    PLACEHOLDER    ------------------
 // -----------------------------------------------------
 
-function elisc_tm_location(){
+function kazi_tm_location(){
 	"use strict";
 	var button		= jQuery('.href_location');
 	button.on('click',function(){
