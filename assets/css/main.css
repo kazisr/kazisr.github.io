@@ -603,7 +603,7 @@ h6 {
 
 /*---------------------------------------------------*/
 
-/*	ELISC MEDIA QUERIES (FOR SMALL DEVICES)
+/*	kazi MEDIA QUERIES (FOR SMALL DEVICES)
     /*---------------------------------------------------*/
 
 /******** Larger Screens *********/
@@ -618,113 +618,113 @@ h6 {
     max-width: 1000px;
   }
 
-  .elisc_tm_sidebar {
+  .kazi_tm_sidebar {
     width: 300px !important;
   }
 
-  .elisc_tm_mainpart {
+  .kazi_tm_mainpart {
     padding-left: 300px !important;
   }
 
-  .elisc_tm_sidebar .author {
+  .kazi_tm_sidebar .author {
     padding-top: 30px;
   }
 
-  .elisc_tm_sidebar .author .image {
+  .kazi_tm_sidebar .author .image {
     width: 77px;
   }
 
-  .elisc_tm_sidebar .name .back {
+  .kazi_tm_sidebar .name .back {
     font-size: 18px;
   }
 
-  .elisc_tm_sidebar .\!name .back {
+  .kazi_tm_sidebar .\!name .back {
     font-size: 18px;
   }
 
-  .elisc_tm_sidebar .name span {
+  .kazi_tm_sidebar .name span {
     font-size: 50px;
   }
 
-  .elisc_tm_sidebar .\!name span {
+  .kazi_tm_sidebar .\!name span {
     font-size: 50px;
   }
 
-  .elisc_tm_sidebar .menu ul li {
+  .kazi_tm_sidebar .menu ul li {
     margin-bottom: 9px;
   }
 
-  .elisc_tm_sidebar .copyright {
+  .kazi_tm_sidebar .copyright {
     bottom: 30px;
   }
 
-  .elisc_tm_sidebar .social ul li a {
+  .kazi_tm_sidebar .social ul li a {
     height: 30px;
     width: 30px;
   }
 
-  .elisc_tm_sidebar .social {
+  .kazi_tm_sidebar .social {
     margin-bottom: 2px;
   }
 
-  .elisc_tm_sidebar .author .image {
+  .kazi_tm_sidebar .author .image {
     margin-bottom: 5px;
   }
 
-  .elisc_tm_home .title h3,.elisc_tm_home .title span {
+  .kazi_tm_home .title h3,.kazi_tm_home .title span {
     font-size: 50px;
     line-height: 60px;
   }
 
-  .elisc_tm_home .buttons {
+  .kazi_tm_home .buttons {
     margin-bottom: 60px;
   }
 
-  .elisc_tm_home .subtitle {
+  .kazi_tm_home .subtitle {
     margin-bottom: 30px;
   }
 
-  .elisc_tm_home .info ul li a {
+  .kazi_tm_home .info ul li a {
     font-size: 16px;
   }
 
-  .elisc_tm_home .\!info ul li a {
+  .kazi_tm_home .\!info ul li a {
     font-size: 16px;
   }
 
-  .elisc_tm_biography .text p {
+  .kazi_tm_biography .text p {
     margin-bottom: 20px;
   }
 
-  .elisc_tm_biography .info ul li {
+  .kazi_tm_biography .info ul li {
     margin-right: 20px;
   }
 
-  .elisc_tm_biography .\!info ul li {
+  .kazi_tm_biography .\!info ul li {
     margin-right: 20px;
   }
 
-  .elisc_tm_biography .title .mini {
+  .kazi_tm_biography .title .mini {
     margin-bottom: 5px;
   }
 
-  .elisc_tm_biography .name {
+  .kazi_tm_biography .name {
     font-size: 35px;
   }
 
-  .elisc_tm_biography .\!name {
+  .kazi_tm_biography .\!name {
     font-size: 35px;
   }
 
-  .elisc_tm_biography .job {
+  .kazi_tm_biography .job {
     font-size: 17px;
   }
 
-  .elisc_tm_biography .title {
+  .kazi_tm_biography .title {
     margin-bottom: 30px;
   }
 
-  .elisc_tm_counter ul li .list_inner {
+  .kazi_tm_counter ul li .list_inner {
     padding-top: 45px;
     padding-bottom: 45px;
     padding-left: 20px;
@@ -732,36 +732,36 @@ h6 {
   }
 }
 
-.elisc_tm_counter h3 {
+.kazi_tm_counter h3 {
   margin-bottom: 3px;
 }
 
 @media (max-width: 1600px) {
-  .elisc_tm_counter h3 {
+  .kazi_tm_counter h3 {
     font-size: 35px;
   }
 
-  .elisc_tm_title h3 {
+  .kazi_tm_title h3 {
     font-size: 35px;
   }
 
-  .elisc_tm_title span {
+  .kazi_tm_title span {
     margin-bottom: 4px;
   }
 
-  .elisc_tm_experience .list ul li .list_inner {
+  .kazi_tm_experience .list ul li .list_inner {
     padding: 40px;
   }
 
-  .elisc_tm_experience .\!list ul li .list_inner {
+  .kazi_tm_experience .\!list ul li .list_inner {
     padding: 40px;
   }
 
-  .elisc_tm_experience .job h3 {
+  .kazi_tm_experience .job h3 {
     font-size: 19px;
   }
 
-  .elisc_tm_experience .job span {
+  .kazi_tm_experience .job span {
     margin-bottom: 3px;
   }
 
@@ -782,82 +782,82 @@ h6 {
     padding-bottom: 45px;
   }
 
-  .elisc_tm_video .play {
+  .kazi_tm_video .play {
     height: 100px;
     width: 100px;
   }
 }
 
-.elisc_tm_video .text {
+.kazi_tm_video .text {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 1600px) {
-  .elisc_tm_video .text {
+  .kazi_tm_video .text {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
-  .elisc_tm_video .text h3 {
+  .kazi_tm_video .text h3 {
     font-size: 15px;
   }
 
-  .elisc_tm_portfolio .portfolio_list .details .title a {
+  .kazi_tm_portfolio .portfolio_list .details .title a {
     font-size: 21px;
   }
 
-  .elisc_tm_portfolio .portfolio_list .details .category {
+  .kazi_tm_portfolio .portfolio_list .details .category {
     margin-bottom: 0px;
   }
 
-  .elisc_tm_news .list .title h3 {
+  .kazi_tm_news .list .title h3 {
     font-size: 25px;
     line-height: 33px;
   }
 
-  .elisc_tm_news .\!list .title h3 {
+  .kazi_tm_news .\!list .title h3 {
     font-size: 25px;
     line-height: 33px;
   }
 
-  .elisc_tm_news .list .meta {
+  .kazi_tm_news .list .meta {
     margin-bottom: 6px;
   }
 
-  .elisc_tm_news .\!list .meta {
+  .kazi_tm_news .\!list .meta {
     margin-bottom: 6px;
   }
 
-  .elisc_tm_about {
+  .kazi_tm_about {
     padding-top: 85px;
   }
 
-  .elisc_tm_services {
+  .kazi_tm_services {
     padding-top: 85px;
   }
 
-  .elisc_tm_portfolio {
+  .kazi_tm_portfolio {
     padding-top: 85px;
   }
 
-  .elisc_tm_news {
+  .kazi_tm_news {
     padding-top: 85px;
   }
 
-  .elisc_tm_contact {
+  .kazi_tm_contact {
     padding-top: 85px;
   }
 
-  .elisc_tm_sticky_section {
+  .kazi_tm_sticky_section {
     top: 85px;
   }
 
-  .dodo_tm_one_page_wrapper .elisc_tm_news {
+  .dodo_tm_one_page_wrapper .kazi_tm_news {
     padding-top: 85px;
   }
 
-  .dodo_tm_one_page_wrapper .elisc_tm_portfolio {
+  .dodo_tm_one_page_wrapper .kazi_tm_portfolio {
     padding-top: 85px;
   }
 }
@@ -880,112 +880,112 @@ h6 {
     display: none;
   }
 
-  .elisc_tm_topbar {
+  .kazi_tm_topbar {
     display: inline-block !important;
   }
 
-  .elisc_tm_sidebar {
+  .kazi_tm_sidebar {
     display: none !important;
   }
 
-  .elisc_tm_mainpart {
+  .kazi_tm_mainpart {
     padding-left: 0px !important;
   }
 
-  .elisc_tm_home .details {
+  .kazi_tm_home .details {
     flex-direction: column-reverse;
     align-items: baseline;
   }
 
-  .elisc_tm_home .details .left {
+  .kazi_tm_home .details .left {
     width: 100%;
   }
 
-  .elisc_tm_home .details .\!left {
+  .kazi_tm_home .details .\!left {
     width: 100%;
   }
 
-  .elisc_tm_home .details .righ {
+  .kazi_tm_home .details .righ {
     margin-bottom: 50px;
     width: 100%;
     padding-left: 0px;
   }
 
-  .elisc_tm_home {
+  .kazi_tm_home {
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .elisc_tm_home .details .right {
+  .kazi_tm_home .details .right {
     margin-bottom: 50px;
     width: 100%;
     padding-left: 0px;
   }
 
-  .elisc_tm_home .details .\!right {
+  .kazi_tm_home .details .\!right {
     margin-bottom: 50px;
     width: 100%;
     padding-left: 0px;
   }
 
-  .elisc_tm_home .title h3,.elisc_tm_home .title span {
+  .kazi_tm_home .title h3,.kazi_tm_home .title span {
     font-size: 50px;
     line-height: 63px;
   }
 
-  .elisc_tm_home .buttons {
+  .kazi_tm_home .buttons {
     margin-bottom: 75px;
   }
 
-  .elisc_tm_biography {
+  .kazi_tm_biography {
     flex-direction: column;
   }
 
-  .elisc_tm_biography .left {
+  .kazi_tm_biography .left {
     margin-bottom: 50px;
     width: 100%;
   }
 
-  .elisc_tm_biography .\!left {
+  .kazi_tm_biography .\!left {
     margin-bottom: 50px;
     width: 100%;
   }
 
-  .elisc_tm_biography .right {
+  .kazi_tm_biography .right {
     width: 100%;
   }
 
-  .elisc_tm_biography .\!right {
+  .kazi_tm_biography .\!right {
     width: 100%;
   }
 
-  .elisc_tm_biography .text p {
+  .kazi_tm_biography .text p {
     margin-bottom: 17px;
   }
 
-  .elisc_tm_counter ul li {
+  .kazi_tm_counter ul li {
     width: 50%;
   }
 
-  .elisc_tm_biography .info ul li {
+  .kazi_tm_biography .info ul li {
     margin-right: 25px;
   }
 
-  .elisc_tm_biography .\!info ul li {
+  .kazi_tm_biography .\!info ul li {
     margin-right: 25px;
   }
 
-  .elisc_tm_title h3 {
+  .kazi_tm_title h3 {
     font-size: 30px;
   }
 
-  .elisc_tm_title span {
+  .kazi_tm_title span {
     margin-bottom: 5px;
   }
 
-  .elisc_tm_counter ul li .list_inner:before {
+  .kazi_tm_counter ul li .list_inner:before {
     display: none;
   }
 
@@ -993,83 +993,83 @@ h6 {
     width: 50%;
   }
 
-  .elisc_tm_partners ul li {
+  .kazi_tm_partners ul li {
     width: 33.333333%;
   }
 
-  .elisc_tm_testimonials .text p {
+  .kazi_tm_testimonials .text p {
     font-size: 20px;
     line-height: 33px;
   }
 
-  .elisc_tm_testimonials .detail h3 {
+  .kazi_tm_testimonials .detail h3 {
     font-size: 25px;
   }
 
-  .elisc_tm_news .wrapper {
+  .kazi_tm_news .wrapper {
     flex-direction: column;
   }
 
-  .elisc_tm_news .left {
+  .kazi_tm_news .left {
     margin-bottom: 50px;
     width: 100%;
     padding-right: 0px;
   }
 
-  .elisc_tm_news .\!left {
+  .kazi_tm_news .\!left {
     margin-bottom: 50px;
     width: 100%;
     padding-right: 0px;
   }
 
-  .elisc_tm_news .right {
+  .kazi_tm_news .right {
     width: 100% !important;
     padding-left: 0px !important;
   }
 
-  .elisc_tm_news .\!right {
+  .kazi_tm_news .\!right {
     width: 100% !important;
     padding-left: 0px !important;
   }
 
-  .elisc_tm_news .list ul li .list_inner {
+  .kazi_tm_news .list ul li .list_inner {
     flex-direction: column;
     align-items: baseline;
   }
 
-  .elisc_tm_news .\!list ul li .list_inner {
+  .kazi_tm_news .\!list ul li .list_inner {
     flex-direction: column;
     align-items: baseline;
   }
 
-  .elisc_tm_news .list .info {
+  .kazi_tm_news .list .info {
     margin-bottom: 20px;
     width: 100%;
   }
 
-  .elisc_tm_news .\!list .info {
+  .kazi_tm_news .\!list .info {
     margin-bottom: 20px;
     width: 100%;
   }
 
-  .elisc_tm_news .list .\!info {
+  .kazi_tm_news .list .\!info {
     margin-bottom: 20px;
     width: 100%;
   }
 
-  .elisc_tm_news .list .title h3 {
+  .kazi_tm_news .list .title h3 {
     font-size: 22px;
   }
 
-  .elisc_tm_news .\!list .title h3 {
+  .kazi_tm_news .\!list .title h3 {
     font-size: 22px;
   }
 
-  .elisc_tm_news .list .meta {
+  .kazi_tm_news .list .meta {
     margin-bottom: 5px;
   }
 
-  .elisc_tm_news .\!list .meta {
+  .kazi_tm_news .\!list .meta {
     margin-bottom: 5px;
   }
 
@@ -1077,37 +1077,37 @@ h6 {
     display: none;
   }
 
-  .elisc_tm_contact .wrapper {
+  .kazi_tm_contact .wrapper {
     flex-direction: column;
   }
 
-  .elisc_tm_contact .wrapper .left {
+  .kazi_tm_contact .wrapper .left {
     margin-bottom: 40px;
     width: 100%;
     padding: 0px;
   }
 
-  .elisc_tm_contact .wrapper .\!left {
+  .kazi_tm_contact .wrapper .\!left {
     margin-bottom: 40px;
     width: 100%;
     padding: 0px;
   }
 
-  .elisc_tm_contact .wrapper .right {
+  .kazi_tm_contact .wrapper .right {
     width: 100%;
     padding: 0px;
   }
 
-  .elisc_tm_contact .wrapper .\!right {
+  .kazi_tm_contact .wrapper .\!right {
     width: 100%;
     padding: 0px;
   }
 
-  .elisc_tm_contact .wrapper .text {
+  .kazi_tm_contact .wrapper .text {
     margin-bottom: 30px;
   }
 
-  .elisc_tm_map {
+  .kazi_tm_map {
     margin-top: 70px;
   }
 }
@@ -1115,61 +1115,61 @@ h6 {
 /******** Small Screens *********/
 
 @media (max-width: 768px) {
-  .elisc_tm_home .title h3,.elisc_tm_home .title span {
+  .kazi_tm_home .title h3,.kazi_tm_home .title span {
     font-size: 35px;
     line-height: 45px;
   }
 
-  .elisc_tm_counter ul {
+  .kazi_tm_counter ul {
     margin: 0px;
   }
 
-  .elisc_tm_counter ul li {
+  .kazi_tm_counter ul li {
     width: 100%;
     padding-left: 0px;
   }
 
-  .elisc_tm_experience .list ul {
+  .kazi_tm_experience .list ul {
     margin: 0px;
   }
 
-  .elisc_tm_experience .\!list ul {
+  .kazi_tm_experience .\!list ul {
     margin: 0px;
   }
 
-  .elisc_tm_experience .list ul li {
+  .kazi_tm_experience .list ul li {
     width: 100%;
     padding-left: 0px;
   }
 
-  .elisc_tm_experience .\!list ul li {
+  .kazi_tm_experience .\!list ul li {
     width: 100%;
     padding-left: 0px;
   }
 
-  .elisc_tm_experience .list ul li .list_inner {
+  .kazi_tm_experience .list ul li .list_inner {
     padding-top: 35px;
     padding-bottom: 35px;
     padding-left: 25px;
     padding-right: 25px;
   }
 
-  .elisc_tm_experience .\!list ul li .list_inner {
+  .kazi_tm_experience .\!list ul li .list_inner {
     padding-top: 35px;
     padding-bottom: 35px;
     padding-left: 25px;
     padding-right: 25px;
   }
 
-  .elisc_tm_experience .short {
+  .kazi_tm_experience .short {
     font-size: 15px;
   }
 
-  .elisc_tm_experience .list ul li {
+  .kazi_tm_experience .list ul li {
     margin-bottom: 30px;
   }
 
-  .elisc_tm_experience .\!list ul li {
+  .kazi_tm_experience .\!list ul li {
     margin-bottom: 30px;
   }
 
@@ -1182,12 +1182,12 @@ h6 {
     padding-left: 0px;
   }
 
-  .elisc_tm_service_title {
+  .kazi_tm_service_title {
     flex-direction: column;
     align-items: baseline !important;
   }
 
-  .elisc_tm_service_title .elisc_tm_title {
+  .kazi_tm_service_title .kazi_tm_title {
     margin-bottom: 20px;
   }
 
@@ -1196,11 +1196,11 @@ h6 {
     padding-right: 25px;
   }
 
-  .elisc_tm_video .text h3 {
+  .kazi_tm_video .text h3 {
     font-size: 12px;
   }
 
-  .elisc_tm_video .text {
+  .kazi_tm_video .text {
     bottom: 10px;
     right: 10px;
     padding-top: 5px;
@@ -1209,26 +1209,26 @@ h6 {
     padding-right: 15px;
   }
 
-  .elisc_tm_video .play {
+  .kazi_tm_video .play {
     height: 45px;
     width: 45px;
   }
 
-  .elisc_tm_video .play .svg {
+  .kazi_tm_video .play .svg {
     height: 13px;
     width: 13px;
   }
 
-  .elisc_tm_portfolio_title {
+  .kazi_tm_portfolio_title {
     flex-direction: column;
     align-items: baseline;
   }
 
-  .elisc_tm_portfolio_title .elisc_tm_title {
+  .kazi_tm_portfolio_title .kazi_tm_title {
     margin-bottom: 20px;
   }
 
-  .elisc_tm_partners ul li {
+  .kazi_tm_partners ul li {
     width: 50%;
   }
 }
