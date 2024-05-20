@@ -5,7 +5,7 @@ module.exports = {
     screens:{
       'large': {'max': '1600px'},
       'middle': {'max': '1040px'},
-      'small': {'max': '768px'},
+      'small': {'max': '500px'},
     },
     fontFamily: {
       inter: ['Inter', "sans-serif"],
