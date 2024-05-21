@@ -11,6 +11,7 @@ module.exports = {
       inter: ['Inter', "sans-serif"],
       karla: ['Karla', "sans-serif"],
       kristi: ['Kristi', "cursive"],
+      agencyBold: ['Agency Gothic CT Bold', "cursive"],
     },
     extend: {
       colors: {
