@@ -288,7 +288,7 @@ body::-webkit-scrollbar-thumb{
 	font-size: 88px;
 	font-family: 'Kristi', "cursive";
 	line-height: 1;
-	color: rgba(19, 15, 73, 0.07);
+	color: rgba(19, 15, 73, 0.15);
 	display: block;
 }
 .kazi_tm_sidebar .name .back{
