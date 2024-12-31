@@ -569,7 +569,7 @@ function kazi_tm_owl_carousel(){
 					items: 2
 				},
 				1040 : {
-					items: 3
+					items: 2
 				}
 			}
 		});
