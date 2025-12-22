@@ -444,7 +444,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
+                    <a href="https://github.com/kazisr/amatStore.git" target="_blank" class="portfolio-card">
                         <img src="assets/img/portfolio/YumStore.gif" class="portfolio-card-img"
                              alt="E‑commerce Platform">
                         <span class="portfolio-card-overlay">
@@ -544,7 +544,7 @@
                 © <script>document.write(new Date().getFullYear())</script>
                 <a href="https://www.linkedin.com/in/kazisr/" target="_blank">Kazi Shahrier Rafid</a>
                 <span class="footer-separator">•</span>
-                <span class="app-version-inline">Web App v2.4.35</span>
+                <span class="app-version-inline" id="webAppVersion"></span>
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
                 <a href="https://github.com/Kazisr" target="_blank" class="link" title="GitHub">
@@ -590,6 +590,7 @@
     <script src="assets/js/meyawo.js"></script>
 
 <script>
+
 function showToast(message, type = "info") {
     const toast = document.getElementById("toast");
     toast.className = `toast ${type}`;
@@ -672,7 +673,14 @@ document.getElementById("contactForm").addEventListener("submit", async function
         button.innerText = "Send Message";
     }
 });
+
+
+const WEB_APP_VERSION = "2.4.36";
+document.getElementById("webAppVersion").textContent = `Web App v${WEB_APP_VERSION}`;
+
+
 </script>
+
 
 </body>
 
