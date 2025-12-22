@@ -474,6 +474,10 @@
                             required
                         >
                     </div>
+                    <!-- Honeypot anti-bot field -->
+                    <div style="display:none">
+                        <input type="text" name="company" tabindex="-1" autocomplete="off">
+                    </div>
                     <div class="form-group col-sm-12">
                         <textarea
                             name="message"
@@ -552,9 +556,11 @@ function showToast(message, type = "info") {
     toast.textContent = message;
     toast.classList.add("show");
 
-    setTimeout(() => {
-        toast.classList.remove("show");
-    }, 3000);
+    setTimeout(() => toast.classList.remove("show"), 3000);
+}
+
+function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
 document.getElementById("contactForm").addEventListener("submit", async function(e) {
@@ -563,21 +569,52 @@ document.getElementById("contactForm").addEventListener("submit", async function
     const form = e.target;
     const button = form.querySelector("button");
 
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+    const company = form.company?.value;
+
+    // Honeypot (bots)
+    if (company) {
+        return; // silently drop
+    }
+
+    // Input validation
+    if (!name || !email || !message) {
+        showToast("All fields are required.", "error");
+        return;
+    }
+
+    if (name.length > 100 || email.length > 150 || message.length > 3000) {
+        showToast("Input too long.", "error");
+        return;
+    }
+
+    if (!isValidEmail(email)) {
+        showToast("Invalid email format.", "error");
+        return;
+    }
+
+    // Payload size check (client-side)
+    const payload = { name, email, message };
+    const payloadSize = new Blob([JSON.stringify(payload)]).size;
+    if (payloadSize > 5000) {
+        showToast("Message too large.", "error");
+        return;
+    }
+
     button.disabled = true;
     button.innerText = "Sending...";
-
-    const payload = {
-        name: form.name.value,
-        email: form.email.value,
-        message: form.message.value
-    };
 
     try {
         const response = await fetch(
             "https://portfolio-contact.grafix147.workers.dev/sayHello",
             {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-API-Key": "portfolio-public-key-2025"
+                },
                 body: JSON.stringify(payload)
             }
         );
@@ -586,10 +623,10 @@ document.getElementById("contactForm").addEventListener("submit", async function
             showToast("Message sent successfully!", "success");
             form.reset();
         } else {
-            showToast("Failed to send message. Try again.", "error");
+            showToast("Failed to send message.", "error");
         }
-    } catch (error) {
-        showToast("Network error. Please try later.", "error");
+    } catch (err) {
+        showToast("Network error.", "error");
     } finally {
         button.disabled = false;
         button.innerText = "Send Message";
